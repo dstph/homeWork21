@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>home work 21</title>
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<form id="data" action="https://api.chucknorris.io/jokes/random" method="GET">
+		<h3>Hey!</h3>
+		<h4>Let’s try to find a joke for you:</h4>
+		<label><input id="random" type="radio" name="category" class="active">Random</label>
+		<label><input id="category" type="radio" name="category">From caterogies</label>
+		<div class="categoryselector"></div>
+		<label><input id="search" type="radio" name="category"><input class="searchValue" type="text" placeholder="Search"></label>
+		<button  type="submit" form="data" class="getJoke">Get a joke</button>
+	</form>
+	<div class="joke"></div>
+	
+    <script src="../javascript/index.js"></script>
+</body>
+</html>
+
